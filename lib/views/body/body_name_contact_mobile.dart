@@ -3,6 +3,7 @@ import 'dart:js' as js;
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/customIcons/my_flutter_app_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../constant.dart';
 
@@ -18,6 +19,7 @@ class _BodyNameContactMobileState extends State<BodyNameContactMobile> {
   String githubUrl = "https://github.com/raymondddenny";
 
   String instagramUrl = "https://www.instagram.com/dennyraymond/";
+  String myEmailUrl = "dennyraymondd@gmail.com";
 
   @override
   Widget build(BuildContext context) {
@@ -78,9 +80,31 @@ class _BodyNameContactMobileState extends State<BodyNameContactMobile> {
                 js.context.callMethod("open", [linkedinUrl]);
               },
             ),
+            FloatingActionButton(
+              elevation: 20,
+              backgroundColor: primaryColor,
+              child: Icon(
+                Icons.mail,
+                color: textColor,
+              ),
+              onPressed: _launchURL,
+            ),
           ],
         )
       ],
     );
+  }
+}
+
+void _launchURL() async {
+  final Uri params = Uri(
+    scheme: 'mailto',
+    path: 'dennyraymondd@gmail.com',
+  );
+  String url = params.toString();
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    print('Could not launch $url');
   }
 }
