@@ -12,7 +12,7 @@ const RESOURCES = {
 "icons/android-icon-192x192.png": "a61ecfa63f25c8ff9010710b466f63db",
 "index.html": "8e7da37924894a29eb4670717b72f0ba",
 "/": "8e7da37924894a29eb4670717b72f0ba",
-"main.dart.js": "9984f28c5a54118c59a745f0783c4707",
+"main.dart.js": "512137d16b9568e5fd9f4d4d4e791ac2",
 "manifest.json": "02f19b9c46f4dc9c170d126367dd7d77",
 "README.md": "1c1d5b185090dd97bbc23ba2451a124d"
 };
