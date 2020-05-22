@@ -32,7 +32,7 @@ class BodyIntroMobile extends StatelessWidget {
           height: 14,
         ),
         Text(
-          "This year (2020) are my last year in university, and been doing my thesis. \nNice to meet you all.",
+          "This year (2020) is my last year in university, and been doing my thesis. \nNice to meet you all.",
           style: GoogleFonts.montserrat(
             color: Colors.brown[200],
             fontSize: 12,

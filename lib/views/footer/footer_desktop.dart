@@ -12,9 +12,21 @@ class FooterDesktop extends StatelessWidget {
           color: Colors.brown[100],
         ),
         Text(
-          " Den. CREATED BY PASSION",
+          " Den. Made in ",
           style: GoogleFonts.heebo(color: Colors.brown[100]),
         ),
+        Image.network(
+          "https://cdn.countryflags.com/thumbs/indonesia/flag-800.png",
+          height: 14,
+        ),
+        Text(
+          " with",
+          style: GoogleFonts.heebo(color: Colors.brown[100]),
+        ),
+        Icon(
+          Icons.favorite,
+          color: Colors.red,
+        )
       ],
     );
   }

@@ -16,7 +16,7 @@ class _SchoolState extends State<School> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          "My Study History",
+          "My education history",
           style: GoogleFonts.poppins(color: Colors.brown[100], fontSize: 25),
         ),
         SizedBox(

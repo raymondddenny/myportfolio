@@ -5,7 +5,7 @@ class ProjectsMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "What did i do ?",
+      "Things that i do ?",
       style: GoogleFonts.poppins(color: Colors.brown[50], fontSize: 28),
     );
   }

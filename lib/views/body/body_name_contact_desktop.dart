@@ -4,8 +4,6 @@ import 'package:my_portfolio/constant.dart';
 import 'package:my_portfolio/customIcons/my_flutter_app_icons.dart';
 import 'dart:js' as js;
 
-import 'package:url_launcher/url_launcher.dart';
-
 class BodyNameContactDesktop extends StatefulWidget {
   @override
   _BodyNameContactDesktopState createState() => _BodyNameContactDesktopState();
@@ -80,31 +78,32 @@ class _BodyNameContactDesktopState extends State<BodyNameContactDesktop> {
                 js.context.callMethod("open", [linkedinUrl]);
               },
             ),
-            FloatingActionButton(
-              elevation: 20,
-              backgroundColor: primaryColor,
-              child: Icon(
-                Icons.mail,
-                color: textColor,
-              ),
-              onPressed: _launchURL,
-            ),
+            // FloatingActionButton(
+            //   elevation: 20,
+            //   backgroundColor: primaryColor,
+            //   child: Icon(
+            //     Icons.mail,
+            //     color: textColor,
+            //   ),
+            //   onPressed: _launchURL,
+            // ),
           ],
         )
       ],
     );
   }
 
-  void _launchURL() async {
-    final Uri params = Uri(
-      scheme: 'mailto',
-      path: 'dennyraymondd@gmail.com',
-    );
-    String url = params.toString();
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      print('Could not launch $url');
-    }
-  }
+//   void _launchURL() async {
+//     final Uri params = Uri(
+//       scheme: 'mailto',
+//       path: 'dennyraymondd@gmail.com',
+//     );
+//     String url = params.toString();
+//     if (await canLaunch(url)) {
+//       await launch(url);
+//     } else {
+//       print('Could not launch $url');
+//     }
+//   }
+// }
 }

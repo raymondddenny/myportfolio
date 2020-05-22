@@ -37,6 +37,9 @@ class HomeView extends StatelessWidget {
                       height: 20,
                     ),
                     School(),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Footers()
                   ],
                 ),
