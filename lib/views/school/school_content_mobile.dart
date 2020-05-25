@@ -33,55 +33,55 @@ class _SchoolMobileViewState extends State<SchoolMobileView> {
             path: {'color': textColor, 'width': 3.0},
             steps: [
               {
-                'color': Colors.brown[100],
-                'background': textColor,
+                'color': primaryColor,
+                'background': secondColor,
                 'label': "1",
                 'content': Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
                       'SMAN 01 Manokwari, Papua Barat',
-                      style: TextStyle(fontSize: 14.0, color: textColor),
+                      style: TextStyle(fontSize: 14.0, color: secondColor),
                     ),
                     Text(
                       "2010-2012",
-                      style: TextStyle(fontSize: 12, color: textColor),
+                      style: TextStyle(fontSize: 12, color: secondColor),
                     )
                   ],
                 ),
               },
               {
-                'color': Colors.brown[100],
-                'background': textColor,
+                'color': primaryColor,
+                'background': secondColor,
                 'label': '2',
                 'content': Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
                       'Nanjing Medical University',
-                      style: TextStyle(fontSize: 14.0, color: textColor),
+                      style: TextStyle(fontSize: 14.0, color: secondColor),
                     ),
                     Text(
                       "2012-2016 : MBBS ",
-                      style: TextStyle(fontSize: 12, color: textColor),
+                      style: TextStyle(fontSize: 12, color: secondColor),
                     )
                   ],
                 )
               },
               {
-                'color': Colors.brown[100],
-                'background': textColor,
+                'color': primaryColor,
+                'background': secondColor,
                 'label': '3',
                 'content': Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
                       'Universitas Pelita Harapan',
-                      style: TextStyle(fontSize: 14.0, color: textColor),
+                      style: TextStyle(fontSize: 14.0, color: secondColor),
                     ),
                     Text(
                       "2017-2021 : Informatics",
-                      style: TextStyle(fontSize: 12, color: textColor),
+                      style: TextStyle(fontSize: 12, color: secondColor),
                     )
                   ],
                 )
@@ -91,18 +91,17 @@ class _SchoolMobileViewState extends State<SchoolMobileView> {
         ),
         Text(
           "Got a projects?",
-          style: GoogleFonts.poppins(color: Colors.brown[100], fontSize: 20),
+          style: GoogleFonts.poppins(color: textColor, fontSize: 20),
         ),
         Text("Let's talk",
-            style: GoogleFonts.poppins(color: Colors.brown[100], fontSize: 20)),
+            style: GoogleFonts.poppins(color: textColor, fontSize: 20)),
         RaisedButton(
           onPressed: _launchURL,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
               "dennyraymondd@gmail.com",
-              style:
-                  GoogleFonts.poppins(color: Colors.brown[100], fontSize: 12),
+              style: GoogleFonts.poppins(color: textColor, fontSize: 12),
             ),
           ),
           color: primaryColor,
@@ -132,7 +131,7 @@ class _SchoolMobileViewState extends State<SchoolMobileView> {
             TextSpan(
               text: "that's all folks.",
               style: GoogleFonts.poppins(
-                color: Colors.brown[100],
+                color: textColor,
                 fontSize: 12,
               ),
             ),
@@ -146,7 +145,7 @@ class _SchoolMobileViewState extends State<SchoolMobileView> {
               backgroundColor: primaryColor,
               child: Icon(
                 MyFlutterApp.instagram,
-                color: textColor,
+                color: secondColor,
               ),
               onPressed: () {
                 js.context.callMethod("open", [instagramUrl]);
@@ -157,7 +156,7 @@ class _SchoolMobileViewState extends State<SchoolMobileView> {
               backgroundColor: primaryColor,
               child: Icon(
                 MyFlutterApp.github_circled,
-                color: textColor,
+                color: secondColor,
               ),
               onPressed: () {
                 js.context.callMethod("open", [githubUrl]);
@@ -168,7 +167,7 @@ class _SchoolMobileViewState extends State<SchoolMobileView> {
               backgroundColor: primaryColor,
               child: Icon(
                 MyFlutterApp.linkedin_squared,
-                color: textColor,
+                color: secondColor,
               ),
               onPressed: () {
                 js.context.callMethod("open", [linkedinUrl]);

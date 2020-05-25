@@ -14,7 +14,7 @@ class BodyMobile extends StatelessWidget {
         Align(
           alignment: Alignment(-0.7, 0.1),
           child: Image(
-            image: AssetImage("assets/images/edit.png"),
+            image: AssetImage("assets/images/profile.png"),
           ),
         ),
         ScreenTypeLayout(

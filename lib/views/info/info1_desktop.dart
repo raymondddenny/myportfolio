@@ -12,7 +12,7 @@ class Info1Desktop extends StatelessWidget {
         padding: const EdgeInsets.all(18.0),
         child: Text(
           "Visualizing \nmy skill sets \n& other \nthings too.",
-          style: GoogleFonts.poppins(fontSize: 65),
+          style: GoogleFonts.poppins(fontSize: 35),
         ),
       ),
     );

@@ -34,55 +34,55 @@ class _SchoolDesktopViewState extends State<SchoolDesktopView> {
             path: {'color': textColor, 'width': 3.0},
             steps: [
               {
-                'color': Colors.brown[100],
-                'background': textColor,
+                'color': primaryColor,
+                'background': secondColor,
                 'label': "1",
                 'content': Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
                       'SMAN 01 Manokwari, Papua Barat',
-                      style: TextStyle(fontSize: 20.0, color: textColor),
+                      style: TextStyle(fontSize: 20.0, color: secondColor),
                     ),
                     Text(
                       "2010-2012",
-                      style: TextStyle(fontSize: 12, color: textColor),
+                      style: TextStyle(fontSize: 12, color: secondColor),
                     )
                   ],
                 ),
               },
               {
-                'color': Colors.brown[100],
-                'background': textColor,
+                'color': primaryColor,
+                'background': secondColor,
                 'label': '2',
                 'content': Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
                       'Nanjing Medical University',
-                      style: TextStyle(fontSize: 22.0, color: textColor),
+                      style: TextStyle(fontSize: 22.0, color: secondColor),
                     ),
                     Text(
                       "2012-2016 : MBBS ",
-                      style: TextStyle(fontSize: 12, color: textColor),
+                      style: TextStyle(fontSize: 12, color: secondColor),
                     )
                   ],
                 )
               },
               {
-                'color': Colors.brown[100],
-                'background': textColor,
+                'color': primaryColor,
+                'background': secondColor,
                 'label': '3',
                 'content': Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
                       'Universitas Pelita Harapan',
-                      style: TextStyle(fontSize: 22.0, color: textColor),
+                      style: TextStyle(fontSize: 22.0, color: secondColor),
                     ),
                     Text(
                       "2017-2021 : Informatics",
-                      style: TextStyle(fontSize: 12, color: textColor),
+                      style: TextStyle(fontSize: 12, color: secondColor),
                     )
                   ],
                 )
@@ -92,18 +92,17 @@ class _SchoolDesktopViewState extends State<SchoolDesktopView> {
         ),
         Text(
           "Got a projects?",
-          style: GoogleFonts.poppins(color: Colors.brown[100], fontSize: 20),
+          style: GoogleFonts.poppins(color: textColor, fontSize: 20),
         ),
         Text("Let's talk",
-            style: GoogleFonts.poppins(color: Colors.brown[100], fontSize: 20)),
+            style: GoogleFonts.poppins(color: textColor, fontSize: 20)),
         RaisedButton(
           onPressed: _launchURL,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
               "dennyraymondd@gmail.com",
-              style:
-                  GoogleFonts.poppins(color: Colors.brown[100], fontSize: 18),
+              style: GoogleFonts.poppins(color: textColor, fontSize: 18),
             ),
           ),
           color: primaryColor,
@@ -130,7 +129,7 @@ class _SchoolDesktopViewState extends State<SchoolDesktopView> {
             ),
             TextSpan(
                 text: "that's all folks.",
-                style: GoogleFonts.poppins(color: Colors.brown[100])),
+                style: GoogleFonts.poppins(color: textColor)),
           ]),
         ),
         Row(

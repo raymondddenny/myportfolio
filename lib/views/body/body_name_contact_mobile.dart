@@ -30,7 +30,7 @@ class _BodyNameContactMobileState extends State<BodyNameContactMobile> {
           child: Text(
             "Denny \nRaymond.",
             style: GoogleFonts.lato(
-                fontSize: 48, fontWeight: FontWeight.bold, color: textColor),
+                fontSize: 48, fontWeight: FontWeight.bold, color: secondColor),
           ),
         ),
         Align(
@@ -45,49 +45,89 @@ class _BodyNameContactMobileState extends State<BodyNameContactMobile> {
           height: 50,
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             FloatingActionButton(
-              elevation: 20,
-              backgroundColor: primaryColor,
-              child: Icon(
-                MyFlutterApp.instagram,
-                color: textColor,
+              hoverColor: textColor,
+              elevation: 10,
+              highlightElevation: 10,
+              backgroundColor: secondColor,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    MyFlutterApp.instagram,
+                    color: primaryColor,
+                  ),
+                  Text(
+                    "Instagram",
+                    style: GoogleFonts.poppins(
+                        fontSize: 6,
+                        color: primaryColor,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
               onPressed: () {
                 js.context.callMethod("open", [instagramUrl]);
               },
             ),
+            // SizedBox(
+            //   width: 10,
+            // ),
             FloatingActionButton(
-              elevation: 20,
-              backgroundColor: primaryColor,
-              child: Icon(
-                MyFlutterApp.github_circled,
-                color: textColor,
+              hoverColor: textColor,
+              elevation: 10,
+              highlightElevation: 10,
+              backgroundColor: secondColor,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    MyFlutterApp.github_circled,
+                    color: primaryColor,
+                  ),
+                  Text(
+                    "Github",
+                    style: GoogleFonts.poppins(
+                        fontSize: 6,
+                        color: primaryColor,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
               onPressed: () {
                 js.context.callMethod("open", [githubUrl]);
               },
             ),
+            // SizedBox(
+            //   width: 10,
+            // ),
             FloatingActionButton(
-              elevation: 20,
-              backgroundColor: primaryColor,
-              child: Icon(
-                MyFlutterApp.linkedin_squared,
-                color: textColor,
+              hoverColor: textColor,
+              elevation: 10,
+              highlightElevation: 10,
+              backgroundColor: secondColor,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    MyFlutterApp.linkedin_squared,
+                    color: primaryColor,
+                  ),
+                  Text(
+                    "Linkedin",
+                    style: GoogleFonts.poppins(
+                        fontSize: 6,
+                        color: primaryColor,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
               onPressed: () {
                 js.context.callMethod("open", [linkedinUrl]);
               },
             ),
-            // FloatingActionButton(
-            //   elevation: 20,
-            //   backgroundColor: primaryColor,
-            //   child: Icon(
-            //     Icons.mail,
-            //     color: textColor,
-            //   ),
-            //   onPressed: _launchURL,
-            // ),
           ],
         )
       ],

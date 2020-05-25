@@ -11,11 +11,11 @@ class BodyDesktop extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Align(
-          alignment: Alignment(-0.7, 0.1),
-          child: Image(
-            image: AssetImage("assets/images/edit.png"),
-          ),
-        ),
+            alignment: Alignment(-0.6, 1),
+            child: Image(
+              height: 450,
+              image: AssetImage('assets/images/profile.png'),
+            )),
         ScreenTypeLayout(
           desktop: BodyNameContactDesktop(),
           mobile: BodyNameContactMobile(),

@@ -16,7 +16,8 @@ class InfoDesktop extends StatelessWidget {
               height: 40,
             ),
             ScreenTypeLayout(
-              desktop: Info1Desktop(),
+              desktop:
+                  Align(alignment: Alignment.center, child: Info1Desktop()),
               mobile: Info1Mobile(),
             )
           ],
